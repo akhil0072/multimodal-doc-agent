@@ -16,10 +16,8 @@ An intelligent agent that analyzes uploaded documents (PDFs, images, scanned tex
 - Streamlit
 
 ### Architecture Overview
-(Insert your diagram: Ingestion → Embedding → Retrieval → Multimodal Agent Reasoning)
+(Ingestion → Embedding → Retrieval → Multimodal Agent Reasoning)
 
-### Demo
-(Replace with your screenshots/GIFs of image uploads and visual answers)
 
 ### Quick Start
 1. `pip install -r requirements.txt`

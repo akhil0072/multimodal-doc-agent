@@ -1,30 +1,25 @@
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app.streamlit.app) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Stars](https://img.shields.io/github/stars/yourusername/multimodal-document-intel?style=social)](https://github.com/yourusername/multimodal-document-intel)
+# Multimodal Document Analyst Agent
 
-# 🔍 Multimodal Document Intelligence Agent
-**Understand any business document — text, tables, charts, scanned images — in seconds.**
-
-Extract structured data, explain visuals, answer complex questions with citations. Built for real enterprise docs (invoices, reports, contracts).
-
-<grok-card data-id="e2b06b" data-type="image_card"></grok-card>
-
-
-
-<grok-card data-id="6936f4" data-type="image_card"></grok-card>
-
-
-### 🚀 Live Demo Highlights
-![Demo: Chart Explanation + Table Extraction](replace-with-your-gif.gif)
+An intelligent agent that analyzes uploaded documents (PDFs, images, scanned text) using vision and text understanding. It answers questions, extracts insights, summarizes visually, and cites sources — perfect for reports, invoices, or research papers.
 
 ### Key Features
-- Multimodal reasoning (vision + text)
-- Table → JSON/CSV export
-- Source highlighting in PDFs/images
-- Streamlit UI with document preview
+- Multimodal input: Handles text PDFs + image-based docs (charts, photos)
+- Vision + LLM reasoning for descriptions and Q&A
+- Source citations and conversational memory
+- Streamlit chat interface with file upload and image previews
 
 ### Tech Stack
-LangChain • GPT-4o/Claude-3.5 • Chroma • Streamlit
+- LangChain/LangGraph
+- Multimodal LLMs (e.g., GPT-4o, Claude-3, Groq)
+- Vector store (Chroma or FAISS)
+- Document processing (PyPDF, OCR if needed)
+- Streamlit
+
+### Architecture Overview
+(Ingestion → Embedding → Retrieval → Multimodal Agent Reasoning)
+
 
 ### Quick Start
-```bash
-pip install -r requirements.txt
-streamlit run app.py
+1. `pip install -r requirements.txt`
+2. Set API keys in `.env`
+3. `streamlit run app.py`
